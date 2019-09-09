@@ -100,3 +100,21 @@ Processing by MemesController#index as */*
 Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1193)
 
 
+Started GET "/" for ::1 at 2019-09-09 00:01:53 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 202)
+Completed 200 OK in 954ms (Views: 945.7ms | ActiveRecord: 0.0ms | Allocations: 1351585)
+
+
+Started GET "/api/memes" for ::1 at 2019-09-09 00:01:54 -0500
+Processing by MemesController#index as */*
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1194)
+
+
+Started POST "/api/memes" for ::1 at 2019-09-09 00:02:04 -0500
+Processing by MemesController#create as HTML
+  Parameters: {"name"=>"Yulli ", "image"=>"https://images.pexels.com/photos/890577/pexels-photo-890577.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "text"=>"OH NO!", "id"=>nil, "meme"=>{"name"=>"Yulli ", "image"=>"https://images.pexels.com/photos/890577/pexels-photo-890577.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "text"=>"OH NO!", "id"=>nil}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 447)
+
+

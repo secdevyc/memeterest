@@ -24,6 +24,7 @@ class Main extends React.Component {
         this.setState({ memes: jData })
       })
   }
+  
   handleCreate = (createMeme) => {
     console.log(createMeme);
     fetch(`/api/memes`, {
@@ -48,6 +49,7 @@ class Main extends React.Component {
       })
       .catch(err => console.log(err))
   }
+
 
   handleUpdate = (updateMeme) => {
     fetch(`/api/memes/${updateMeme.id}`, {

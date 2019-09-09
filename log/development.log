@@ -1,0 +1,102 @@
+  [1m[35m (323.7ms)[0m  [1m[35mCREATE DATABASE "memeterest_development" ENCODING = 'unicode'[0m
+  [1m[35m (247.5ms)[0m  [1m[35mCREATE DATABASE "memeterest_test" ENCODING = 'unicode'[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-09-08 23:10:57 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 375)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2618ms (Views: 2607.4ms | ActiveRecord: 0.0ms | Allocations: 1348012)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-09-08 23:15:07 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1136ms (Views: 1135.0ms | ActiveRecord: 0.0ms | Allocations: 4350)
+
+
+Started GET "/" for ::1 at 2019-09-08 23:35:23 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1197ms (Views: 1196.3ms | ActiveRecord: 0.0ms | Allocations: 4214)
+
+
+Started GET "/api/memes" for ::1 at 2019-09-08 23:35:53 -0500
+Processing by MemesController#index as */*
+  Parameters: {"name"=>"STRAW", "image"=>"pi", "text"=>"strawberry!", "meme"=>{"name"=>"STRAW", "image"=>"pi", "text"=>"strawberry!"}}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 883)
+
+
+Started GET "/" for ::1 at 2019-09-08 23:36:26 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 202)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2107ms (Views: 2100.2ms | ActiveRecord: 0.0ms | Allocations: 1341329)
+
+
+Started GET "/" for ::1 at 2019-09-08 23:42:44 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1235ms (Views: 1234.1ms | ActiveRecord: 0.0ms | Allocations: 4215)
+
+
+Started GET "/api/memes" for ::1 at 2019-09-08 23:49:45 -0500
+Processing by MemesController#index as HTML
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1187)
+
+
+Started GET "/" for ::1 at 2019-09-08 23:49:49 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 1311ms (Views: 1310.5ms | ActiveRecord: 0.0ms | Allocations: 4212)
+
+
+Started GET "/" for ::1 at 2019-09-08 23:50:19 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 202)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 2345ms (Views: 2337.6ms | ActiveRecord: 0.0ms | Allocations: 1341323)
+
+
+Started GET "/" for ::1 at 2019-09-08 23:52:28 -0500
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 202)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/yc/dev/memeterest/public/packs
+Completed 200 OK in 6752ms (Views: 6744.5ms | ActiveRecord: 0.0ms | Allocations: 1352643)
+
+
+Started GET "/api/memes" for ::1 at 2019-09-08 23:52:35 -0500
+Processing by MemesController#index as */*
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1193)
+
+

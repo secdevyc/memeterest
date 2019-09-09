@@ -1,0 +1,169 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ /* == IMPORTED FONTS == */
+ @import url('https://fonts.googleapis.com/css?family=Abel|Lora|Roboto+Condensed:700&display=swap');
+
+ /* ================= */
+ /*       VARIABLES   */
+ /* ================= */
+ :root {
+   /* fonts */
+   --header-font: 'Lora';
+   --main-font: 'Abel';
+   --meme-font: 'Roboto Condensed';
+ }
+ /* ================= */
+ /*       GENERAL     */
+ /* ================= */
+ body {
+   background-color: #FEDCD2;
+ }
+
+ /* ================= */
+ /*       HEADER      */
+ /* ================= */
+ header {
+   font-family: var(--header-font);
+   /* display: flex;
+   flex-direction: row;
+   flex-wrap: wrap; */
+   background-color: #f4f4f4;
+   margin: -10px -20px 0 -20px;
+   letter-spacing: 0.1em;
+   color: #373737;
+ }
+ .header-inner-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 90%;
+   margin-left: 50px;
+ }
+ /* .rotated {
+   transform: rotate(90deg);
+ } */
+ .nav{
+   color: #DCB239;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+ .nav h4 {
+   margin: 15px;
+ }
+ .nav h4:hover{
+   color: black;
+   cursor: pointer;
+ }
+
+ /* ================= */
+ /*       MAIN        */
+ /* ================= */
+ main {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   flex-basis: auto;
+   margin-top: 25px;
+   margin-left: 55px;
+   margin-right: 50px;
+ }
+
+ /* ================= */
+ /*       POSTS       */
+ /* ================= */
+ .card-container{
+   font-family: var(--main-font);
+   margin: 10px;
+ }
+ .card {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   border-radius: 4px;
+   box-shadow: 2px 2px 4px #8FD8D2;
+   background-color: #f4f4f4;
+   width: 275px;
+ }
+ .card h2 {
+   font-family: var(--meme-font);
+ }
+ img {
+   width: 100%;
+ }
+ .options{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+ }
+ .card:hover{
+   background-color: white;
+ }
+ .options h5 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
+   background-color: #DCB239;
+   width: 75px;
+   height: 22px;
+   border-radius: 2px;
+   box-shadow: 1px 1px 2px gray;
+ }
+ .options h5:hover {
+   background-color: #8FD8D2;
+ }
+
+ /* ================= */
+ /*       FORM        */
+ /* ================= */
+ form {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin: 10px;
+   padding: 5px;
+   background: #8FD8D2;
+   border-radius: 2px;
+   box-shadow: 2px 2px 2px #8FD8E0;
+   font-family: var(--main-font);
+ }
+ .inputs {
+   margin: 10px;
+ }
+ label {
+   padding: 10px;
+ }
+ input[type="text"] {
+   text-align: center;
+ }
+ .submit{
+   background-color: #DCB239;
+   padding: 5px 10px;
+   border-radius: 2px;
+   color: #f4f4f4;
+   text-transform: uppercase;
+   font-size: 13px;
+   box-shadow: 2px 2px 2px #f4f4f4;
+ }
+ .submit:hover {
+   background-color: #FEDCD2;
+   color: black;
+ }
